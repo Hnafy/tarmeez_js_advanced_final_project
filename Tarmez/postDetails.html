@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- icon tab -->
+    <link rel="icon" href="images/Tarmeez-circle.png">
+    <!-- normalize -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- icons -->
+    <link href="icons/fontawesome-free-6.5.1-web/css/all.css" rel="stylesheet">
+    <!-- style sheet -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Post Details</title>
+</head>
+<body>
+    <!-- start contanier -->
+    <div class="contanier">
+        <header>
+            <!-- start header page -->
+            <div class="header_pages">
+                <!-- start header page logo -->
+                <div class="header_pages_logo"><span>Tarmeez</span></div>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a onclick="profileClicked()" style="cursor: pointer;">Profile</a></li>
+                </ul>
+            </div>
+            <!-- end header page logo -->
+            <!-- start header user -->
+            <div class="header_user">
+                <img src="images/avatar.jpg" alt="avatar" id="avatarHeader">
+                <span id="name"></span>
+                <button id="login">Login</button>
+                <button id="register">Register</button>
+                <button id="logout" class="logout-hidden">Logout</button>
+            </div>
+            <!-- end header user -->
+            <!-- end header page -->
+        </header>
+        <main>
+            <!-- start posts -->
+            <div class="main_posts">
+                <!-- start post -->
+                <!-- by js -->
+                <!-- end post -->
+        </main>
+    </div>
+    <!-- end contanier -->
+    <!-- start modal -->
+    <!-- start login -->
+    <div class="modal" id="loginModal">
+        <div class="box" id="logBox">
+            <div class="bx">
+                <h3>Login</h3>
+                <div class="form">
+                    <input type="text" placeholder="User Name.." id="userNameLogin" value="yarobTest">
+                    <div class="password">
+                        <input type="password" placeholder="Password.." id="passwordLogin" value="123456">
+                        <i class="fa-regular fa-eye-slash eye" id="eyeIconLog"></i>
+                    </div>
+                    <input type="submit" value="Login" id="loginSubmit">
+                </div>
+                <div class="close-box">
+                    <label for="chkBox" class="box-close" id="logModalOut">X</label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end login -->
+    <!-- start register -->
+    <div class="modal" id="registerModal">
+        <div class="box" id="regBox">
+            <div class="bx">
+                <h3>Register</h3>
+                <div class="form">
+                    <input type="text" placeholder="User Name.." id="userNameRegister">
+                    <div class="password">
+                        <input type="password" placeholder="Password.." id="passwordRegister">
+                        <i class="fa-regular fa-eye-slash eye" id="eyeIconReg"></i>
+                    </div>
+                    <input type="file" id="avatarUser">
+                    <input type="text" placeholder="Name.." id="nameRegiser">
+                    <input type="text" placeholder="email.." id="emailRegiser">
+                    <input type="submit" value="Register" id="registerSubmit">
+                </div>
+                <div class="close-box">
+                    <label for="chkBox" class="box-close" id="regModalOut">X</label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end register -->
+    <!-- start alert -->
+    <div class="alert">
+        <span>Hello world</span>
+    </div>
+    <!-- end alert -->
+    <!-- start loader -->
+    <div class="container-loader loader-hide">
+        <div class="loader"></div>
+    </div>
+    <!-- end loader -->
+    <!-- main js file -->
+    <script src="node_modules/axios/dist/axios.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/postDetails.js"></script>
+</body>
+</html>

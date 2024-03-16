@@ -351,3 +351,6 @@ function profileClicked(){
     let userId = getName()
     window.location = `profile.html?postId=${userId.id}`
 }
+
+// tag error --done
+// auto reload page at create post --done

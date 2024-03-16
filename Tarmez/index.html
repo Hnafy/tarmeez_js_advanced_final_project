@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- icon tab -->
+    <link rel="icon" href="images/Tarmeez-circle.png">
+    <!-- normalize -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- icons -->
+    <link href="icons/fontawesome-free-6.5.1-web/css/all.css" rel="stylesheet">
+    <!-- style sheet -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Tarmeez</title>
+</head>
+<body>
+    <!-- start contanier -->
+    <div class="contanier">
+        <header>
+            <!-- start header page -->
+            <div class="header_pages">
+                <!-- start header page logo -->
+                <div class="header_pages_logo"><span>Tarmeez</span></div>
+                <ul>
+                    <li><a href="index.html" class="page-active">Home</a></li>
+                    <li><a onclick="profileClicked()" style="cursor: pointer;">Profile</a></li>
+                </ul>
+            </div>
+            <!-- end header page logo -->
+            <!-- start header user -->
+            <div class="header_user">
+                <img src="images/avatar.jpg" alt="avatar" id="avatarHeader">
+                <span id="name"></span>
+                <button id="login">Login</button>
+                <button id="register">Register</button>
+                <button id="logout" class="logout-hidden">Logout</button>
+            </div>
+            <!-- end header user -->
+            <!-- end header page -->
+        </header>
+        <main>
+            <!-- start posts -->
+            <div class="main_posts">
+                <!-- start post -->
+                <!-- by js -->
+                <!-- end post -->
+            </div>
+            <!-- end posts -->
+        </main>
+    </div>
+    <!-- end contanier -->
+    <!-- start modal -->
+    <!-- start login -->
+    <div class="modal" id="loginModal">
+        <div class="box" id="logBox">
+            <div class="bx">
+                <h3>Login</h3>
+                <div class="form">
+                    <input type="text" placeholder="User Name.." id="userNameLogin" value="yarobTest">
+                    <div class="password">
+                        <input type="password" placeholder="Password.." id="passwordLogin" value="123456">
+                        <i class="fa-regular fa-eye-slash eye" id="eyeIconLog"></i>
+                    </div>
+                    <input type="submit" value="Login" id="loginSubmit">
+                </div>
+                <div class="close-box">
+                    <label for="chkBox" class="box-close" id="logModalOut">X</label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end login -->
+    <!-- start register -->
+    <div class="modal" id="registerModal">
+        <div class="box" id="regBox">
+            <div class="bx">
+                <h3>Register</h3>
+                <div class="form">
+                    <input type="text" placeholder="User Name.." id="userNameRegister">
+                    <div class="password">
+                        <input type="password" placeholder="Password.." id="passwordRegister">
+                        <i class="fa-regular fa-eye-slash eye" id="eyeIconReg"></i>
+                    </div>
+                    <input type="file" id="avatarUser">
+                    <input type="text" placeholder="Name.." id="nameRegiser">
+                    <input type="text" placeholder="email.." id="emailRegiser">
+                    <input type="submit" value="Register" id="registerSubmit">
+                </div>
+                <div class="close-box">
+                    <label for="chkBox" class="box-close" id="regModalOut">X</label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end register -->
+    <!-- start new post modal -->
+    <div class="modal" id="createModal">
+        <div class="box" id="createBox">
+            <div class="bx">
+                <h3 id="box_head">Create A New Post</h3>
+                <div class="form">
+                    <input type="text" placeholder="Title .." id="titleInput">
+                    <textarea class="body-input" id="bodyInput" placeholder="Body .."></textarea>
+                    <input type="file" id="imageInput">
+                    <input type="hidden" value="" id="postIdInput">
+                    <input type="submit" value="Create" id="createSubmit">
+                </div>
+                <div class="close-box">
+                    <label for="chkBox" class="box-close" id="createModalOut">X</label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end new post modal -->
+    <!-- start delete modal -->
+    <div class="modal" id="deleteModal">
+        <div class="box" id="deleteBox">
+            <div class="bx">
+                <h3>Are You Sure You Want To Delete ?</h3>
+                <div class="form">
+                    <input type="submit" value="Yes,Delete" id="deleteSubmit">
+                </div>
+                <div class="close-box">
+                    <label for="chkBox" class="box-close" id="deleteModalOut">X</label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end delete modal -->
+    <!-- end modal -->
+    <!-- start alert -->
+    <div class="alert">
+        <span>Hello world</span>
+    </div>
+    <!-- end alert -->
+    <!-- start add post -->
+    <div class="new-post" id="addBtn">
+        <span>+</span>
+    </div>
+    <!-- end add post -->
+    <!-- start loader -->
+    <div class="container-loader loader-hide">
+        <div class="loader"></div>
+    </div>
+    <!-- end loader -->
+    <!-- main js file -->
+    <script src="node_modules/axios/dist/axios.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
