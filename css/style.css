@@ -49,6 +49,7 @@ body {
 
 .contanier {
     flex: 0.6;
+    max-width: 500px;
 }
 
 /* start header */
@@ -208,6 +209,7 @@ main {
 .main_posts_post_content {
     margin: 10px 0;
     padding: 10px;
+    overflow: hidden;
 }
 
 .main_posts_post_content p {
